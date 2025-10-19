@@ -1,0 +1,120 @@
+<!--! TwoGood clone using HTML, CSS, JS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwoGood Clone</title>
+    <link rel="shortcut icon" href="./img/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <!--? Navbar -->
+    <div class="nav" id="nav">
+        <div class="navItems1" id="navItems1">
+            <img src="./img/logo1.png" alt="logo2">
+            <img src="./img/logo2.png" alt="logo2">
+        </div>
+
+        <div class="navItems2" id="navItems2">
+            <a id="link" href="#">SHOP</a>
+            <a id="link" href="#">CATERING<i class="ri-arrow-right-up-line"></i></a>
+            <a id="link" href="#">DONATE</a>
+            <div class="icons">
+                <a href="#"><i class="ri-menu-3-line"></i></a>
+                <a href="#"><i class="ri-shopping-cart-line"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--? Cursor Page 3-->
+    <div class="cursor"></div>
+
+    <div class="main" id="main">
+        <!--? Page 1 -->
+        <div class="page1" id="page1">
+            <h1>CHANGE </h1>
+            <h1>THE COURSE</h1>
+            <div class="video-container" id="video-container">
+                <div class="play" id="play">PLAY</div>
+                <video src="./video/video.mp4" autoplay muted loop></video>
+            </div>
+        </div>
+
+        <!--? shop border - out of pages  -->
+        <div class="shop">
+            <p>BUY GOOD</p>
+            <p>DO GOOD</p>
+        </div>
+
+        <!--? Page 2  -->
+        <div class="page2" id="page2">
+            <div class="elem elem2">
+                <img data-scroll data-scroll-speed="1" src="./img/DSC0078_Dexter Kim.jpg" alt="img">
+                <div data-scroll data-scroll-speed="-1" class="details-box box1">
+                    <i class="fa-solid fa-circle"></i>
+                    <p>SHOP</p>
+                    <p>NEW GOODIES</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="elem elem1">
+                <img data-scroll data-scroll-speed="1" src="./img/LucyTweed_Photo_KatieKarrs.jpg" alt="img">
+                <div data-scroll data-scroll-speed="-1" class="details-box box2">
+                    <i class="fa-solid fa-circle"></i>
+                    <p>SHOP</p>
+                    <p>PANTRY</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="elem elem3">
+                <img data-scroll data-scroll-speed="1" src="./img/Rectangle 220.jpg" alt="img">
+                <div data-scroll data-scroll-speed="-1" class="details-box box3">
+                    <i class="fa-solid fa-circle"></i>
+                    <p>SHOP</p>
+                    <p>BATH</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+
+        <!--? Page 3 -->
+        <div class="page3" id="page3">
+            <div class="child" id="child1">
+                <img src="https://cdn.sanity.io/images/w8f1ak3c/production/d6a2a4be8e3063d64648773f57f5f447609a93ab-5000x5000.png/Love-Care-Pack-Expanded-Two-Good-Co.png?w=1024&h=1024&auto=format"
+                    alt="img">
+                <p>CHANGE THE COURSE OF COOK KIT <br> $75</p>
+            </div>
+            <div class="child" id="child2">
+                <img src="https://cdn.sanity.io/images/w8f1ak3c/production/7a2007de38624a0b2935416bf51a4584889aa232-5000x5000.png/Website%20Products%20(12).png?w=1024&h=1024&auto=format"
+                    alt="img">
+                <p>CHANGE THE COURSE OF COOK KIT <br> $75</p>
+            </div>
+            <div class="child" id="child3">
+                <img src="https://cdn.sanity.io/images/w8f1ak3c/production/99866b12faf44f7490e6037dc197947334ce0a72-1408x1408.png/Nourish%20&%20Soothe%20Hand%20Lotion%20Two%20Good%20Co.png?w=1024&h=1024&auto=format"
+                    alt="img">
+                <p>CHANGE THE COURSE OF COOK KIT <br> $75</p>
+            </div>
+            <div class="child" id="child4">
+                <img src="https://cdn.sanity.io/images/w8f1ak3c/production/4206e9c3f7ab098369c39a2194b82eeca6bb0664-6166x4111.png/DSC0005_Dexter%20Kim.png?rect=2,0,6163,4111&w=1024&h=683&auto=format"
+                    alt="img">
+                <p>CHANGE THE COURSE OF COOK KIT <br> $75</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

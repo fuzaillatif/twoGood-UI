@@ -1,0 +1,366 @@
+/*? TwoGood website CSS */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap');
+
+@font-face {
+    src: url(./font/Futura-Bold.ttf);
+    font-family: futura;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+:root {
+    --accent-color: #007fcd;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #F7F7F7;
+}
+
+/*? Navbar */
+.nav {
+    height: 100px;
+    width: 100%;
+    /* background-color: grey; */
+    position: fixed;
+    z-index: 220;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 1.4vw;
+}
+
+/* NavItems1 */
+.nav .navItems1 {
+    height: 100px;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.nav .navItems1 img {
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+
+.nav .navItems1 :nth-child(2) {
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+/* NavItems2 */
+.nav .navItems2 {
+    margin: 1.2vw 2vw;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav .navItems2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav .navItems2 .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-radius: 50px;
+    padding: 6px 15px;
+    background-color: white;
+}
+
+.nav .navItems2 :nth-child(4) i,
+.nav .navItems2 :nth-child(5) i {
+    font-size: 1.6vw;
+}
+
+.nav .navItems2 a:hover {
+    opacity: 0.6;
+}
+
+.cursor {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #cfcfcf;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.main {
+    padding: 0 1.5%;
+}
+
+/*? Page1 CSS  */
+.page1 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 32vh;
+}
+
+.page1 h1 {
+    font-size: 16vw;
+    text-align: center;
+    line-height: 14vw;
+    letter-spacing: -10px;
+    font-family: futura;
+}
+
+.video-container {
+    margin-top: 1vw;
+    height: 100vh;
+    width: 100%;
+    /* background-color: grey; */
+    position: relative;
+    cursor: pointer;
+}
+
+.video-container .play {
+    position: absolute;
+    padding: 2.5vw 1.5vw;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0;
+    scale: 0;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*? Shop Line */
+.shop {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    margin: 2vw 0;
+}
+
+
+/*? Page 2 CSS */
+.page2 {
+    /* padding: 2vw 0; */
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-color: grey; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elem {
+    height: 100%;
+    width: 32%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.1;
+}
+
+/* Details box */
+.elem .details-box {
+    height: 50px;
+    width: 70%;
+    position: absolute;
+    z-index: 11;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transform-origin: top;
+}
+
+.elem .details-box:hover {
+    /*! Fix this, extend the height from bottom only*/
+    height: 220px;
+    /* transform: scaleY(1.2);  */
+    /* background-color: red; */
+}
+
+.elem .details-box i {
+    font-size: 0.6vw;
+}
+
+.elem .details-box p {
+    font-size: 0.9vw;
+}
+
+.elem .details-box :nth-child(3) {
+    font-weight: 600;
+}
+
+/* Box Colors */
+.elem .box1 {
+    background-color: #C3D8C5;
+}
+
+.elem .box2 {
+    background-color: #F5DFCF;
+}
+
+.elem .box3 {
+    background-color: #FFFFFF;
+}
+
+
+/*? Page 3  */
+.page3 {
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.page3 .child {
+    height: 55vh;
+    width: 45vw;
+    /* background-color: crimson; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5vw 0;
+}
+
+.page3 .child img {
+    height: 100%;
+    /* width: 100%; */
+}
+
+.page3 .child p {
+    font-size: 1vw;
+}
+
+
+
+/*! Media Query Mobile */
+@media (max-width: 600px) {
+
+    /*? Page 1  */
+    .main {
+        padding: 0 3%;
+    }
+
+    .page1 {
+        min-height: 70vh;
+        padding-top: 22vh;
+    }
+
+    .video-container {
+        margin-top: 8vw;
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video-container .play {
+        position: absolute;
+        padding: 4vw 2vw;
+        border-radius: 50%;
+        background-color: black;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        opacity: 1;
+        scale: 1;
+    }
+
+    /*? Page 2 */
+    .page2 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .page2 .elem {
+        width: 100%;
+    }
+
+    /* Details box */
+    .elem .details-box i {
+        font-size: 1.9vw;
+    }
+
+    .elem .details-box p {
+        font-size: 2vw;
+    }
+
+    .elem .details-box :nth-child(3) {
+        font-weight: 600;
+    }
+
+    /*? Page3 Media */
+    .page3 .child {
+        /* min-height: 55vh; */
+        width: 88vw;
+        padding: 15vw;
+        margin: 0 0;
+    }
+
+    .page3 .child img {
+        height: 100%;
+    }
+
+    .page3 .child p {
+        font-size: 2vw;
+    }
+
+    /*? Navbar  */
+
+    .nav .navItems1 :nth-child(2) {
+        padding: 15px;
+    }
+
+    /* NavItems2 */
+    .nav .navItems2 {
+        gap: 40px;
+    }
+
+    .nav .navItems2 a {
+        font-size: 2vw;
+    }
+
+    .nav .navItems2 :nth-child(4) i,
+    .nav .navItems2 :nth-child(5) i {
+        font-size: 3vw;
+    }
+}
